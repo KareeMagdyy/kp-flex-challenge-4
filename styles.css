@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@900&family=Roboto:wght@300;400&display=swap");
+
+:root {
+  /*Colors*/
+  --clr-cream: #f3eed9;
+  --clr-brown: #824936;
+  --clr-dark: #222c2a;
+  /*Fonts*/
+  --f-tittle: "Playfair Display", serif;
+  --f-main: "Roboto", sans-serif;
+}
+
+/* Globals */
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--f-main);
+}
+
+/* typo */
+h1,
+h2,
+h3 {
+  font-family: var(--f-tittle);
+  font-size: 2.25rem;
+}
+
+p {
+  font-family: var(--f-main);
+  font-size: 1.3125rem;
+  font-weight: 400;
+}
+
+section {
+  height: 50vh;
+  margin: auto;
+  padding: 4rem 2rem;
+}
+
+.container {
+  max-width: 1128px;
+  margin: 0 auto;
+}
+
+.row {
+  display: flex;
+}
+
+img {
+  max-width: 100%;
+  align-self: center;
+}
+
+header {
+  background-color: var(--clr-cream);
+}
+
+header > div {
+  height: 100vh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+header p {
+  font-size: 1.125rem;
+  letter-spacing: 10px;
+  font-weight: 300;
+  margin: 0;
+}
+
+header h1 {
+  color: var(--clr-brown);
+  font-size: 3.75rem;
+  font-weight: 900;
+  line-height: 1.1;
+  text-align: center;
+  margin: 0.75rem auto;
+  max-width: 75%;
+}
+
+/* quality-design */
+
+.quality-design h2 {
+  color: var(--clr-brown);
+  font-weight: 900;
+  text-align: center;
+}
+
+.quality-design > div {
+  gap: 3rem;
+}
+
+/* custom */
+.custom {
+  background-color: var(--clr-dark);
+  color: #fff;
+}
+
+.custom > div {
+  gap: 3rem;
+}
+
+/* care */
+.care {
+  background-color: var(--clr-brown);
+  color: var(--clr-cream);
+}
+.care > div {
+  gap: 3rem;
+}
